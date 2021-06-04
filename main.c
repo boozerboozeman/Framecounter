@@ -45,7 +45,7 @@ int sceDisplaySetFrameBuf_patched(const SceDisplayFrameBuf *pParam, int sync) {
 		updateFramebuf(pParam);
 		if (tick == 0){
 			tick = t_tick;
-			setTextColor(0x00FFFFFF);
+			setTextColor(0x0066FF00);
 		}else{
 			if ((t_tick - tick) > FPS_TIMER_TICK){
 				fps = frames;
