@@ -10,6 +10,7 @@
 #define SWITCH_MODE_DELAY 3000000
 #define FPS_TIMER_TICK 1000000
 #define NUM_MODES 2
+#define COLOR 0x0066FF00
 
 enum
 {
@@ -54,7 +55,7 @@ int sceDisplaySetFrameBuf_patched(const SceDisplayFrameBuf *pParam, int sync)
 		if (tick == 0)
 		{
 			tick = t_tick;
-			setTextColor(0x0066FF00);
+			setTextColor(COLOR);
 		}
 		else
 		{
